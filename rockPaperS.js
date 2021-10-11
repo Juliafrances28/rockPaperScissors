@@ -34,3 +34,34 @@ function getComputerChoice() {
 // again this is used to test the function
 console.log(getComputerChoice("scissors"));
 console.log(getComputerChoice("rock"));
+
+// This was used to determind the who won in there different possible cases. To do this I impliented a if/else statment of each opition
+const determineWinner = (userChoice, computerChoice) => {
+  if (userChoice === computerChoice) {
+    return "The game was tied";
+
+    if (userChoice === "paper") {
+      if (computerChoice === "scissors") {
+        return "the computer won!";
+      } else {
+        return "You won!";
+
+        if (userChoice === "paper") {
+          if (computerChoice === "paper") {
+            return "The computer won!";
+          } else {
+            return "You won!";
+
+            if (userChoice === "paper") {
+              if (computerChoice === "rock") {
+                return "The computer won!";
+              } else {
+                return "You won!";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
