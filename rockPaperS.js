@@ -70,3 +70,14 @@ const determineWinner = (userChoice, computerChoice) => {
 console.log(determineWinner("paper", "scissors"));
 console.log(determineWinner("paper", "paper"));
 console.log(determineWinner("paper", "rock"));
+
+//finally time to play the game. This function allows the game to run.
+const playGame = () => {
+  const userChoice = getUserChoice();
+  const computerChoice = getComputerChoice();
+  console.log("You threw:" + userChoice);
+  console.log("The computer threw:" + computerChoice);
+  console.log(determineWinner(getUserChoice, getComputerCHoice));
+};
+
+playGame();
