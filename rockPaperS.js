@@ -65,3 +65,8 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
+
+// testing this function
+console.log(determineWinner("paper", "scissors"));
+console.log(determineWinner("paper", "paper"));
+console.log(determineWinner("paper", "rock"));
